@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Autocomplete - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            var availableTags = [
+                "Ashu : 1 : 26",
+                "Ravi : 2 :  24",
+                "Shahil: 3 : 27",
+                "Ram   : 4    28",
+                "Mohan : 5 : 29",
+                "Atul :  6  : 30",
+                "Rohit : 7 : 32",
+                "Alka :  8 :  44",
+                "Ritu :  11 : 33",
+                "Runa  : 12 : 44",
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="ui-widget">
+        <label for="tags">Passenger name:ID : Age:</label>
+        <input id="tags">
+    </div>
+
+
+</body>
+</html>
