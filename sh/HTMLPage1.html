@@ -1,0 +1,82 @@
+﻿<html>
+<head>
+    <title>Registration Process</title>
+
+    <!-- include css file here-->
+    <link rel="stylesheet" href="css/dynamic_ui_style_create.css" />
+
+    <!-- include javascript file here-->
+    <script src="js/submit_javascript.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="#" method="post" name="form_name" id="form_id" class="form_class">
+                <h2>Register with us</h2><hr />
+                <label>Name :</label><br />
+                <input type="text" name="name" id="name" placeholder="Name" /><br />
+
+                <label>Password :</label><br />
+                <input type="password" name="password" id="password" maxlength="8" placeholder="Password" /><br />
+
+                <label>Email :</label><br />
+                <input type="text" name="email" id="email" placeholder="Valid Email" /> <br />
+
+                <label>Phone :</label><br />
+                <input type="phone" name="phone" id="phone" maxlength="10" placeholder="Valid Phone Number" /> <br />
+
+                <label>Age :</label><br />
+                <input type="number" name="age" id="age" maxlength="3" max="999" min="1" placeholder="Valid Age" /> <br />
+
+
+
+                <body onload="refresh_option();">
+                    <table>
+                        <tr>
+                            <td>
+                                <p align="center">
+                                    Welcome To Captcha<br />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="captcha"
+                                       style="background-image:url(1.jpg); text-align:center; border:none;
+											font-weight:bold; font-family:Modern" />
+
+
+
+                                <input type="text" id="inputTextCaptcha" placeholder="Enter Captcha"
+                                       style="text-align:center;font-weight:bold; font-family:Modern" />
+
+                                <p align="center">
+                                    <button type="button" id="refresh_btn_id" onclick="refresh_option();"
+                                            style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:2%;margin-bottom:0%">
+                                        Refresh
+                                    </button>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </table>
+                </body>
+
+
+                <input type="button" name="submit_id" id="btn_id" value="Submit" onclick="submit_option()" />
+                <input type="button" name="submit_name" id="btn_name" value="Reset" onclick="cancel_option()" />
+
+            </form>
+
+        </div>
+        <!-- Div RIGHT IMAGE is advertisement div-->
+        <div class="image_adv">
+            <a href="http://www.bizruntime.com/"><img src="images/formGetadv-1.png" /></a>
+        </div>
+    </div>
+</body>
+
+</html>  
